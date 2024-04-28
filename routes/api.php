@@ -11,3 +11,6 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/', [PersonController::class, "index"]);
 Route::post('/insert', [PersonController::class, 'insert']);
+Route::get('/view/{id}', [PersonController::class, 'show']);
+Route::put('/update/{id}', [PersonController::class, 'update']);
+Route::delete('/delete/{id}', [PersonController::class, 'destroy']);
