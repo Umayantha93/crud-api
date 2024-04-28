@@ -10,3 +10,4 @@ Route::get('/user', function (Request $request) {
 
 
 Route::get('/', [PersonController::class, "index"]);
+Route::post('/insert', [PersonController::class, 'insert']);
